@@ -36,7 +36,7 @@ const StudioFooter = ({
 
   return (
     <>
-      <StudioFooterHelpSectionSlot containerProps={containerProps} />
+      {/* <StudioFooterHelpSectionSlot containerProps={containerProps} /> */}
       <Container
         size="xl"
         className={classNames('px-4', containerClassName)}
@@ -71,8 +71,8 @@ const StudioFooter = ({
             Translators: 'edX' and 'Open edX' are trademarks of 'edX Inc.'. Please do not translate
               any of these trademarks and company names.
           */}
-          <FormattedMessage {...messages.trademarkMessage} />
-          <Hyperlink className="ml-1" destination="https://www.edx.org">edX Inc</Hyperlink>.
+          {/* <FormattedMessage {...messages.trademarkMessage} />
+          <Hyperlink className="ml-1" destination="https://www.edx.org">edX Inc</Hyperlink>. */}
           <ActionRow.Spacer />
           <StudioFooterLogoSlot />
         </ActionRow>

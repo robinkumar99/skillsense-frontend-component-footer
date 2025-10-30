@@ -22,16 +22,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openedx/frontend-component-footer.git"
+    "url": "git+https://github.com/robinkumar99/skillsense-frontend-component-footer.git"
   },
   "author": "edX",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/openedx/frontend-component-footer/issues"
+    "url": "https://github.com/robinkumar99/skillsense-frontend-component-footer/issues"
   },
-  "homepage": "https://github.com/openedx/frontend-component-footer#readme",
+  "homepage": "https://github.com/robinkumar99/skillsense-frontend-component-footer#readme",
   "devDependencies": {
-    "@edx/brand": "npm:@openedx/brand-openedx@^1.2.2",
+    "@edx/brand": "npm:@openedx/brand-openedx:https://github.com/robinkumar99/skillsense-brand-openedx",
     "@edx/browserslist-config": "^1.1.1",
     "@edx/frontend-platform": "^8.2.1",
     "@openedx/frontend-build": "^14.3.1",
