@@ -4,11 +4,11 @@ import { Hyperlink, Image } from '@openedx/paragon';
 
 const StudioFooterLogoSlot = () => (
   <PluginSlot id="org.openedx.frontend.layout.studio_footer_logo.v1" idAliases={['studio_footer_logo_slot']}>
-    <Hyperlink destination="#" className="float-right">
+    <Hyperlink destination="https://openedx.org" className="float-right">
       <Image
         width="120px"
-        alt="Powered by Skillsense"
-        src="/images/add_your_site_logo.png"
+        alt="Powered by Open edX"
+        src="https://logos.openedx.org/open-edx-logo-tag.png"
       />
     </Hyperlink>
   </PluginSlot>
