@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import isEmpty from 'lodash/isEmpty';
-import { useIntl, FormattedMessage } from '@edx/frontend-platform/i18n';
+import { useIntl } from '@edx/frontend-platform/i18n';
 import { ensureConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
 import {
@@ -12,7 +12,6 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 import messages from './messages';
-import StudioFooterLogoSlot from '../../plugin-slots/StudioFooterLogoSlot';
 import StudioFooterHelpSectionSlot from '../../plugin-slots/StudioFooterHelpSectionSlot';
 
 ensureConfig([
@@ -63,18 +62,6 @@ const StudioFooter = ({
             </Hyperlink>
           )}
           <Hyperlink destination={config.LMS_BASE_URL}>LMS</Hyperlink>
-        </ActionRow>
-        <ActionRow className="mt-3 pb-4 x-small">
-          {/*
-            Site operators: Please do not remove this paragraph! this attributes back to edX and
-              makes your acknowledgement of edX's trademarks clear.
-            Translators: 'edX' and 'Open edX' are trademarks of 'edX Inc.'. Please do not translate
-              any of these trademarks and company names.
-          */}
-          <FormattedMessage {...messages.trademarkMessage} />
-          <Hyperlink className="ml-1" destination={config.LMS_BASE_URL}>{messages.trademarkMessage}</Hyperlink>
-          <ActionRow.Spacer />
-          <StudioFooterLogoSlot />
         </ActionRow>
       </Container>
     </>
