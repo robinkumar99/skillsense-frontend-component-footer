@@ -1,3 +1,3 @@
-import StudioFooter from './StudioFooter';
+import StudioIndigoFooter from './StudioIndigoFooter';
 
-export default StudioFooter;
+export default StudioIndigoFooter;
